@@ -117,7 +117,7 @@ class LoginWindow:
         password = self.password_entry.get().strip()
         
         if not username or not password:
-            messagebox.showerror("Xatolik", "Foydalanuvchi nomi va parolni kiriting!")
+            messagebox.showerror("Xatolik", "Foydalanuvchi nomi va parolni kiriting iltimos!")
             return
         
         conn = sqlite3.connect(DB_NAME)
