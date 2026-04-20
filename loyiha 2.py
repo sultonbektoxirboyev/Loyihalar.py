@@ -108,7 +108,7 @@ class LoginWindow:
                           (username, hashed_pw))
             conn.commit()
             conn.close()
-            messagebox.showinfo("Muvaffaqiyatli", "Ro'yxatdan o'tdingiz!")
+            messagebox.showinfo("Muvaffaqiyatli bo'ldi", "Ro'yxatdan o'tdingiz!")
         except sqlite3.IntegrityError:
             messagebox.showerror("Xatolik", "Bu foydalanuvchi nomi band!")
     
